@@ -60,11 +60,34 @@ class WebsiteClient:
         log.info("Loaded: url=%s title=%r", self._page.url, self._page.title())
 
         report("Dismissing popups...")
-        for button in ("Reject all", "Play", "Continue to Wordle", "Close"):
+        for button in ("Reject all", "Play", "Continue to Wordle"):
             self.dismiss_if_present(self._page.get_by_role("button", name=button))
+        self._close_modals()
 
         _human_pause()
         log.info("After popups: %s", self._describe_board())
+
+    def _close_modals(self, first_wait: float = 15000, max_rounds: int = 4) -> None:
+        """Close the game's modal(s) (e.g. how-to-play) and verify they are really gone.
+
+        The modal can render well after the previous popup is dismissed, especially on a slow CI
+        runner, so wait generously for the first one and re-check after each click.
+        """
+        close = self._page.locator("button[aria-label='Close']").first
+        for round_ in range(1, max_rounds + 1):
+            try:
+                close.wait_for(state="visible", timeout=first_wait if round_ == 1 else 3000)
+            except PlaywrightTimeoutError:
+                log.info("No visible Close button (round %d); modals done", round_)
+                return
+            log.info("Close button visible (round %d); clicking", round_)
+            try:
+                close.click(timeout=5000)
+                close.wait_for(state="hidden", timeout=5000)
+            except PlaywrightTimeoutError:
+                log.warning("Close click did not hide the modal; pressing Escape")
+                self._page.keyboard.press("Escape")
+        log.warning("Modal still present after %d rounds", max_rounds)
 
     def fetch_words(self) -> list[str]:
         """Read the game's own word list (allowed guesses + answers) out of its JS bundle."""
