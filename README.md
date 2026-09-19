@@ -4,6 +4,12 @@ Automatically solves the daily [NYT Wordle](https://www.nytimes.com/games/wordle
 
 Runs once a day via GitHub Actions against the live puzzle; results below are updated automatically.
 
+## Download (Windows)
+
+Grab the latest `wordle-<version>-windows-x64.exe` from the [Releases page](../../releases/latest) and run it. It drives Microsoft Edge (preinstalled on Windows 10/11), so there is nothing else to install.
+
+Releases are built automatically on every push to `main` that changes the app. Versions are `MAJOR.MINOR.BUILD`: bump `MAJOR.MINOR` in `pyproject.toml` by hand for meaningful changes; `BUILD` is the CI run number.
+
 ## Usage
 
 ```

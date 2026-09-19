@@ -35,7 +35,7 @@ class WebsiteClient:
 
         report("Launching browser...")
         self._playwright = sync_playwright().start()
-        self._browser = self._playwright.firefox.launch(headless=self._headless)
+        self._browser = self._playwright.chromium.launch(channel="msedge", headless=self._headless)
         self._page = self._browser.new_page()
         # Keep the game's script responses; one of them embeds the word list (see fetch_words).
         self._page.on(

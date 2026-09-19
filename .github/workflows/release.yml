@@ -1,0 +1,54 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+    # The daily results commit only touches scripts/ and README.md, so it must not cut a release.
+    paths:
+      - "src/**"
+      - "packaging/**"
+      - "pyproject.toml"
+      - "uv.lock"
+      - ".github/workflows/release.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          python-version: "3.14"
+
+      - run: uv sync --frozen
+
+      # MAJOR.MINOR comes from pyproject.toml (bump by hand); the patch is the CI run number.
+      - name: Compute version
+        id: version
+        shell: bash
+        run: |
+          base=$(uv run python -c "import tomllib; print('.'.join(tomllib.load(open('pyproject.toml','rb'))['project']['version'].split('.')[:2]))")
+          version="$base.${{ github.run_number }}"
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+          echo "__version__ = \"$version\"" > src/wordle/_version.py
+
+      - name: Build exe
+        run: uv run pyinstaller --onefile --name wordle --collect-all playwright packaging/entry.py
+
+      - name: Smoke test
+        run: ./dist/wordle.exe --version
+
+      - name: Publish release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          v="${{ steps.version.outputs.version }}"
+          mv dist/wordle.exe "dist/wordle-$v-windows-x64.exe"
+          (cd dist && sha256sum "wordle-$v-windows-x64.exe" > "wordle-$v-windows-x64.exe.sha256")
+          gh release create "v$v" dist/wordle-* --target "${{ github.sha }}" --title "v$v" --generate-notes

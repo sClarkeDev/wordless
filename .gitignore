@@ -4,3 +4,9 @@ __pycache__/
 *.pyo
 .mypy_cache/
 .ruff_cache/
+
+# Stamped by CI at build time
+src/wordle/_version.py
+dist/
+build/
+*.spec

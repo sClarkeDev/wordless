@@ -1,10 +1,16 @@
 import argparse
+from importlib.metadata import version as package_version
 
 from rich.console import Console
 
 from wordle import run
 from wordle.feedback import FeedbackResult
 from wordle.result import format_guess
+
+try:
+    from wordle._version import __version__  # stamped by CI for release builds
+except ImportError:
+    __version__ = package_version("wordle")
 
 
 def main() -> None:
@@ -41,6 +47,7 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Run the browser headless instead of showing it.",
     )
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     return parser.parse_args()
 
 
