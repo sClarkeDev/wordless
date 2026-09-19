@@ -88,28 +88,16 @@ class WebsiteClient:
 
     def submit_guess(self, word: str, row: int) -> bool:
         """Type and submit a word. Returns False if the game rejected it (row is cleared)."""
-        last_tile = self._page.locator(f"div[aria-label='Row {row}'] div[role='img']").last
-
-        # Keystrokes silently vanish if the page lost focus or a modal is lingering, so make sure
-        # the letters actually landed in the row and retry once if not.
-        for typing_attempt in range(2):
-            self._close_modals(first_wait=1000, max_rounds=2)
-            self._page.locator(f"div[aria-label='Row {row}']").click(force=True)
-            for letter in word:
-                self._page.keyboard.press(letter, delay=uniform(20, 60))
-                # Short, jittery gap between keystrokes, like fast typing.
-                sleep(uniform(0.05, 0.2))
-            if last_tile.get_attribute("data-state") == "tbd":
-                break
-            for _ in word:
-                self._page.keyboard.press("Backspace")
-        else:
-            raise RuntimeError(f"Could not type {word!r} into row {row}: the game ignored keystrokes")
+        for letter in word:
+            self._page.keyboard.press(letter, delay=uniform(20, 60))
+            # Short, jittery gap between keystrokes, like fast typing.
+            sleep(uniform(0.05, 0.2))
 
         _human_pause(0.2, 0.5)
         self._page.keyboard.press("Enter")
 
         # Wait for the animation to finish before returning
+        last_tile = self._page.locator(f"div[aria-label='Row {row}'] div[role='img']").last
         try:
             self._page.wait_for_function(
                 """(row) => {
