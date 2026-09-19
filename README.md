@@ -1,4 +1,4 @@
-# Wordle Solver
+# Wordless (Wordle Solver)
 
 Automatically solves the daily [NYT Wordle](https://www.nytimes.com/games/wordle/index.html) by driving the real site with Playwright, picking each guess to maximize letter coverage across the remaining candidate words. A GitHub Actions workflow runs it against the live puzzle every day.
 
