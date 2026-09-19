@@ -97,27 +97,42 @@ class WebsiteClient:
         self._page.keyboard.press("Enter")
 
         # Wait for the animation to finish before returning
+        last_tile = self._page.locator(f"div[aria-label='Row {row}'] div[role='img']").last
         try:
             self._page.wait_for_function(
                 """(row) => {
                     const tiles = document.querySelectorAll(`div[aria-label='Row ${row}'] div[role='img']`);
                     const last = tiles[tiles.length - 1];
                     const state = last && last.getAttribute('data-state');
-                    const animation = last && last.getAttribute('data-animation');
-                    const isRevealed = state && state !== 'tbd' && state !== 'empty' && animation && animation === 'idle';
-                    return isRevealed;
+                    return !!state && state !== 'tbd' && state !== 'empty';
                 }""",
                 arg=row,
                 timeout=10000,
             )
         except PlaywrightTimeoutError:
+            state = last_tile.get_attribute("data-state")
             # A word the game doesn't accept leaves its letters sitting in the row unrevealed.
-            last_tile = self._page.locator(f"div[aria-label='Row {row}'] div[role='img']").last
-            if last_tile.get_attribute("data-state") != "tbd":
-                raise
+            if state != "tbd":
+                raise RuntimeError(
+                    f"Guess {word!r} was not revealed (last tile state: {state!r}); "
+                    "the Enter key may not have registered"
+                ) from None
             for _ in word:
                 self._page.keyboard.press("Backspace")
             return False
+
+        # Let the flip animation finish so feedback is stable; best-effort, not required.
+        with suppress(PlaywrightTimeoutError):
+            self._page.wait_for_function(
+                """(row) => {
+                    const tiles = document.querySelectorAll(`div[aria-label='Row ${row}'] div[role='img']`);
+                    const last = tiles[tiles.length - 1];
+                    const animation = last && last.getAttribute('data-animation');
+                    return !animation || animation === 'idle';
+                }""",
+                arg=row,
+                timeout=5000,
+            )
         return True
 
     def read_feedback(self, row: int) -> list[FeedbackResult]:
