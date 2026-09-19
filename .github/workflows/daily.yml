@@ -24,6 +24,15 @@ jobs:
 
       - run: uv run python scripts/run_daily.py --headless
 
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: wordle-timeout
+          path: |
+            wordle-timeout.png
+            wordle-timeout.html
+          if-no-files-found: ignore
+
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Daily Wordle results"
