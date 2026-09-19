@@ -1,0 +1,30 @@
+name: Daily Wordle
+
+on:
+  schedule:
+    - cron: "5 0 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v3
+        with:
+          python-version: "3.14"
+
+      - run: uv sync --frozen
+
+      - run: uv run playwright install --with-deps firefox
+
+      - run: uv run python scripts/run_daily.py --headless
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Daily Wordle results"
+          file_pattern: "scripts/results.json README.md"
