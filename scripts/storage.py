@@ -4,7 +4,8 @@ from pathlib import Path
 
 from wordle.result import RunResult
 
-RESULTS_PATH = Path(__file__).resolve().parent / "results.json"
+DATA_DIR = Path(__file__).resolve().parent.parent / "data"
+RESULTS_PATH = DATA_DIR / "results.json"
 
 
 def load_history(path: Path = RESULTS_PATH) -> list[RunResult]:
@@ -18,6 +19,7 @@ def append_result(result: RunResult, path: Path = RESULTS_PATH) -> None:
     history.append(result)
     history.sort(key=lambda record: record.date)
 
+    path.parent.mkdir(parents=True, exist_ok=True)
     payload = json.dumps([record.to_dict() for record in history], indent=2) + "\n"
 
     # Write to a temp file first so a crash mid-write can't corrupt the committed record.

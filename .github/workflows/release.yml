@@ -3,7 +3,7 @@ name: Release
 on:
   push:
     branches: [main]
-    # The daily results commit only touches scripts/ and README.md, so it must not cut a release.
+    # The daily results commit only touches data/, so it must not cut a release.
     paths:
       - "src/**"
       - "packaging/**"

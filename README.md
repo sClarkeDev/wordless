@@ -1,28 +1,28 @@
 # Wordle Solver
 
-Automatically solves the daily [NYT Wordle](https://www.nytimes.com/games/wordle/index.html) by driving the real site with Playwright, picking each guess to maximize letter coverage across the remaining candidate words.
+Automatically solves the daily [NYT Wordle](https://www.nytimes.com/games/wordle/index.html) by driving the real site with Playwright, picking each guess to maximize letter coverage across the remaining candidate words. A GitHub Actions workflow runs it against the live puzzle every day.
 
-Runs once a day via GitHub Actions against the live puzzle; results below are updated automatically.
+## Getting started
 
-## Download (Windows)
+Choose one of the two options below.
 
-Grab the latest `wordle-<version>-windows-x64.exe` from the [Releases page](../../releases/latest) and run it. It drives Microsoft Edge (preinstalled on Windows 10/11), so there is nothing else to install.
+### Option 1: Windows executable
 
-Releases are built automatically on every push to `main` that changes the app. Versions are `MAJOR.MINOR.BUILD`: bump `MAJOR.MINOR` in `pyproject.toml` by hand for meaningful changes; `BUILD` is the CI run number.
+1. Download the latest `.exe` from the [Releases page](../../releases/latest).
+2. Double-click it to run.
 
-## Usage
+### Option 2: Run from source (any platform)
 
-```
+Requires [uv](https://docs.astral.sh/uv/), which installs the correct Python version automatically.
+
+```sh
+git clone https://github.com/sClarkeDev/wordless.git
+cd wordless
+uv sync
+uv run playwright install msedge  # skip on Windows, Edge is already installed
 uv run wordle
-uv run wordle --headless  # headless
 ```
-
-`scripts/run_daily.py` is a thin wrapper around this used by the GitHub Actions workflow to also record results to `scripts/results.json`, update the README stats below, and write the full per-day table to `scripts/RESULTS.md` — not needed for normal use.
 
 ## Results
 
-<!-- RESULTS:START -->
-**Games:** 1 &nbsp;|&nbsp; **Win rate:** 100% &nbsp;|&nbsp; **Current streak:** 1 &nbsp;|&nbsp; **Avg attempts (wins):** 5.0
-<!-- RESULTS:END -->
-
-[scripts/RESULTS.md](scripts/RESULTS.md) (spoilers).
+Daily results are recorded in [RESULTS.md](data/RESULTS.md).
