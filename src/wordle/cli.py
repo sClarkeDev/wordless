@@ -1,4 +1,5 @@
 import contextlib
+import sys
 
 from rich.console import Console
 
@@ -7,8 +8,20 @@ from wordle.feedback import FeedbackResult
 from wordle.result import format_guess
 
 
+def _version() -> str:
+    try:
+        from wordle._version import __version__
+    except ImportError:
+        return "dev"
+    return __version__
+
+
 def main() -> None:
-    console = Console()
+    if "--version" in sys.argv[1:]:
+        print(f"wordle {_version()}")
+        return
+
+    console = Console(legacy_windows=False)
     try:
         solve(console)
     except Exception as error:
