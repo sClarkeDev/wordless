@@ -92,7 +92,7 @@ class WebsiteClient:
 
         # Keystrokes silently vanish if the page lost focus or a modal is lingering, so make sure
         # the letters actually landed in the row and retry once if not.
-        for typing_attempt in range(2):
+        for _ in range(2):
             self._close_modals(first_wait=1000, max_rounds=2)
             self._page.locator(f"div[aria-label='Row {row}']").click(force=True)
             for letter in word:
