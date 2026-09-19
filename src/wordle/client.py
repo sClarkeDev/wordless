@@ -49,29 +49,10 @@ class WebsiteClient:
 
         self._page.goto(self.WORDLE_URL)
 
-        for button in ("Reject all", "Play", "Continue to Wordle"):
+        for button in ("Reject all", "Play", "Continue to Wordle", "Close"):
             self.dismiss_if_present(self._page.get_by_role("button", name=button))
-        self._close_modals()
 
         _human_pause()
-
-    def _close_modals(self, first_wait: float = 15000, max_rounds: int = 4) -> None:
-        """Close the game's modal(s) (e.g. how-to-play) and verify they are really gone.
-
-        The modal can render well after the previous popup is dismissed, especially on a slow CI
-        runner, so wait generously for the first one and re-check after each click.
-        """
-        close = self._page.locator("button[aria-label='Close']").first
-        for round_ in range(1, max_rounds + 1):
-            try:
-                close.wait_for(state="visible", timeout=first_wait if round_ == 1 else 3000)
-            except PlaywrightTimeoutError:
-                return
-            try:
-                close.click(timeout=5000)
-                close.wait_for(state="hidden", timeout=5000)
-            except PlaywrightTimeoutError:
-                self._page.keyboard.press("Escape")
 
     def fetch_words(self) -> list[str]:
         """Read the game's own word list (allowed guesses + answers) out of its JS bundle."""
@@ -145,6 +126,6 @@ class WebsiteClient:
         if self._playwright:
             self._playwright.stop()
 
-    def dismiss_if_present(self, locator, timeout: float = 4000) -> None:
+    def dismiss_if_present(self, locator, timeout: float = 6000) -> None:
         with suppress(PlaywrightTimeoutError):
             locator.click(timeout=timeout, no_wait_after=True)
