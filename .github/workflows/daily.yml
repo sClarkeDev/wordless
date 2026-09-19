@@ -36,4 +36,4 @@ jobs:
       - uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "Daily Wordle results"
-          file_pattern: "scripts/results.json README.md"
+          file_pattern: "scripts/results.json scripts/RESULTS.md README.md"

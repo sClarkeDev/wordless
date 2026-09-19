@@ -11,19 +11,12 @@ uv run wordle
 uv run wordle --headless  # headless
 ```
 
-`scripts/run_daily.py` is a thin wrapper around this used by the GitHub Actions workflow to also record results to `scripts/results.json` and update the README stats below — not needed for normal use.
+`scripts/run_daily.py` is a thin wrapper around this used by the GitHub Actions workflow to also record results to `scripts/results.json`, update the README stats below, and write the full per-day table to `scripts/RESULTS.md` — not needed for normal use.
 
 ## Results
 
 <!-- RESULTS:START -->
 **Games:** 1 &nbsp;|&nbsp; **Win rate:** 100% &nbsp;|&nbsp; **Current streak:** 1 &nbsp;|&nbsp; **Avg attempts (wins):** 5.0
-
-<details>
-<summary>Show results table (spoilers)</summary>
-
-| Date | Result | Attempts | Word |
-| --- | --- | --- | --- |
-| 2026-09-19 | Won | 5 | waken |
-
-</details>
 <!-- RESULTS:END -->
+
+[scripts/RESULTS.md](scripts/RESULTS.md) (spoilers).

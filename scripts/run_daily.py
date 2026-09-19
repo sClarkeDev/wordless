@@ -1,7 +1,7 @@
 import argparse
 import logging
 
-from readme import update_readme
+from report import update_readme, update_results_md
 from storage import append_result
 
 from wordle import run
@@ -17,6 +17,7 @@ def main() -> None:
     result = run(headless=args.headless)
     append_result(result)
     update_readme()
+    update_results_md()
     print(result)
 
 
