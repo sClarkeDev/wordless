@@ -10,13 +10,12 @@ MAX_ATTEMPTS = 6
 
 
 def run(
-    headless: bool = False,
     on_status: Callable[[str], None] | None = None,
     on_attempt_start: Callable[[int, str], None] | None = None,
     on_attempt_end: Callable[[int, str, list[FeedbackResult]], None] | None = None,
 ) -> RunResult:
     run_date = date.today()
-    client = WebsiteClient(headless=headless)
+    client = WebsiteClient()
     history: list[Guess] = []
     tried_words: set[str] = set()
 

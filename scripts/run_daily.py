@@ -1,5 +1,3 @@
-import argparse
-
 from report import update_readme, update_results_md
 from storage import append_result
 
@@ -7,22 +5,11 @@ from wordle import run
 
 
 def main() -> None:
-    args = parse_args()
-    result = run(headless=args.headless)
+    result = run()
     append_result(result)
     update_readme()
     update_results_md()
     print(result)
-
-
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Solve today's Wordle automatically.")
-    parser.add_argument(
-        "--headless",
-        action="store_true",
-        help="Run the browser headless (used in CI).",
-    )
-    return parser.parse_args()
 
 
 if __name__ == "__main__":

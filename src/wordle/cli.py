@@ -1,5 +1,4 @@
-import argparse
-from importlib.metadata import version as package_version
+import contextlib
 
 from rich.console import Console
 
@@ -7,48 +6,42 @@ from wordle import run
 from wordle.feedback import FeedbackResult
 from wordle.result import format_guess
 
-try:
-    from wordle._version import __version__  # stamped by CI for release builds
-except ImportError:
-    __version__ = package_version("wordle")
-
 
 def main() -> None:
-    args = parse_args()
     console = Console()
+    try:
+        solve(console)
+    except Exception as error:
+        console.print(f"[red]Error:[/red] {error}")
+    finally:
+        wait_for_exit(console)
+
+
+def solve(console: Console) -> None:
     with console.status("Starting...") as status:
 
         def on_status(message: str) -> None:
             status.update(message)
 
         def on_attempt_start(attempt: int, word: str) -> None:
-            status.update(f"Attempt {attempt}: trying [bold]{word.upper()}[/bold]")
+            status.update(f"Attempt {attempt}: {word.upper()}")
 
         def on_attempt_end(attempt: int, word: str, feedback: list[FeedbackResult]) -> None:
             console.print(f"Attempt {attempt}: {format_guess(word, feedback)}")
 
         result = run(
-            headless=args.headless,
             on_status=on_status,
             on_attempt_start=on_attempt_start,
-            on_attempt_end=on_attempt_end if args.headless else None,
+            on_attempt_end=on_attempt_end,
         )
 
-    if result.won:
-        console.print(f"Solved in {result.attempts} attempts: {result.solved_word}")
-    else:
-        console.print(f"Not solved after {result.attempts} attempts")
+    if not result.won:
+        console.print("Could not solve the puzzle")
 
 
-def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Solve today's Wordle automatically.")
-    parser.add_argument(
-        "--headless",
-        action="store_true",
-        help="Run the browser headless instead of showing it.",
-    )
-    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
-    return parser.parse_args()
+def wait_for_exit(console: Console) -> None:
+    with contextlib.suppress(EOFError):
+        console.input("\nPress Enter to exit...")
 
 
 if __name__ == "__main__":

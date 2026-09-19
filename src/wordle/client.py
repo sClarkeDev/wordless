@@ -21,8 +21,7 @@ def _human_pause(low: float = 0.5, high: float = 1.5) -> None:
 class WebsiteClient:
     WORDLE_URL = "https://www.nytimes.com/games/wordle/index.html?eafs_enabled=false"
 
-    def __init__(self, headless: bool = False) -> None:
-        self._headless = headless
+    def __init__(self) -> None:
         self._playwright = None
         self._browser = None
         self._page = None
@@ -33,10 +32,11 @@ class WebsiteClient:
             if on_status:
                 on_status(message)
 
-        report("Launching browser...")
+        report("Loading Wordle...")
         self._playwright = sync_playwright().start()
-        self._browser = self._playwright.chromium.launch(channel="msedge", headless=self._headless)
+        self._browser = self._playwright.chromium.launch(channel="msedge", headless=True)
         self._page = self._browser.new_page()
+
         # Keep the game's script responses; one of them embeds the word list (see fetch_words).
         self._page.on(
             "response",
@@ -47,10 +47,8 @@ class WebsiteClient:
             ),
         )
 
-        report("Loading Wordle...")
         self._page.goto(self.WORDLE_URL)
 
-        report("Dismissing popups...")
         for button in ("Reject all", "Play", "Continue to Wordle"):
             self.dismiss_if_present(self._page.get_by_role("button", name=button))
         self._close_modals()
