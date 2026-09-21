@@ -56,5 +56,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-09-21",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "pager",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "present",
+          "present",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "crate",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "lader",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "gaper",
+        [
+          "present",
+          "hit",
+          "present",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "pager",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
