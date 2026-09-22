@@ -114,5 +114,73 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-09-22",
+    "won": true,
+    "attempts": 6,
+    "solved_word": "stoke",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "miss",
+          "present",
+          "present"
+        ]
+      ],
+      [
+        "steno",
+        [
+          "hit",
+          "hit",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "stoep",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "stove",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "stole",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "stoke",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
