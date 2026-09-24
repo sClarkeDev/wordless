@@ -220,5 +220,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-09-24",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "messy",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "neist",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "pelsh",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "jessy",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "messy",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
