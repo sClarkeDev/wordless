@@ -278,5 +278,73 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-09-25",
+    "won": false,
+    "attempts": 6,
+    "solved_word": null,
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "miss",
+          "present",
+          "present"
+        ]
+      ],
+      [
+        "steno",
+        [
+          "present",
+          "miss",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "doseh",
+        [
+          "miss",
+          "hit",
+          "present",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "bouse",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "lowse",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "poyse",
+        [
+          "present",
+          "hit",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
