@@ -346,5 +346,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-09-26",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "elegy",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "eldin",
+        [
+          "hit",
+          "hit",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "elute",
+        [
+          "hit",
+          "hit",
+          "miss",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "elegy",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]

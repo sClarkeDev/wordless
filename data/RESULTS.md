@@ -4,12 +4,13 @@
 
 | Games | Win rate | Current streak | Avg. attempts (wins) |
 | ---: | ---: | ---: | ---: |
-| 6 | 83% | 0 | 4.8 |
+| 7 | 86% | 1 | 4.7 |
 
 ### History
 
 | Date | Result | Attempts | Word |
 | --- | --- | --- | --- |
+| 2026-09-26 | Won | 4 | elegy |
 | 2026-09-25 | Lost | 6 | - |
 | 2026-09-24 | Won | 5 | messy |
 | 2026-09-23 | Won | 3 | forth |
