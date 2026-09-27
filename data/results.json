@@ -394,5 +394,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-09-27",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "sloop",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "miss",
+          "hit",
+          "present"
+        ]
+      ],
+      [
+        "psion",
+        [
+          "present",
+          "present",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "splog",
+        [
+          "hit",
+          "present",
+          "present",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "sloop",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
