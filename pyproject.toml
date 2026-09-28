@@ -1,7 +1,7 @@
 [project]
 name = "wordle"
 version = "0.3.0"
-description = "Add your description here"
+description = "Automated solver for the daily NYT Wordle, driven through a real browser with Playwright."
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [

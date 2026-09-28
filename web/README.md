@@ -1,6 +1,6 @@
 # Wordless Web
 
-The [live results page](https://sclarkedev.github.io/wordless/) for Wordless. It shows today's solve, overall stats (games played, win rate, streak, average guesses) and the full history of daily runs. Built with React, TypeScript and Vite, and deployed to GitHub Pages.
+The [live results page](https://wordless.sclarke.dev/) for Wordless. It shows today's solve, overall stats (games played, win rate, streak, average guesses) and the full history of daily runs. Built with React, TypeScript and Vite, and deployed to GitHub Pages.
 
 ## How it works
 
