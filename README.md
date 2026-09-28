@@ -25,4 +25,8 @@ uv run wordle
 
 ## Results
 
-Daily results are recorded in [RESULTS.md](data/RESULTS.md).
+See the [live results page](https://sclarkedev.github.io/wordless/), or the raw record in [results.json](data/results.json).
+
+## Disclaimer
+
+Wordless is an independent, unofficial project. It is not affiliated with, endorsed by, or sponsored by The New York Times Company.
