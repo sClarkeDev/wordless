@@ -25,7 +25,7 @@ uv run wordle
 
 ## Results
 
-See the [live results page](https://sclarkedev.github.io/wordless/), or the raw record in [results.json](data/results.json).
+See the [live results page](https://wordless.sclarke.dev/), or the raw record in [results.json](data/results.json).
 
 ## Disclaimer
 

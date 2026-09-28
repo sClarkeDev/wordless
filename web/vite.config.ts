@@ -5,7 +5,6 @@ import { defineConfig, type Plugin } from 'vite'
 
 // GitHub Actions sets GITHUB_REPOSITORY (owner/name); the fallback covers local builds.
 const REPO = process.env.GITHUB_REPOSITORY ?? 'sClarkeDev/wordless'
-const [, REPO_NAME] = REPO.split('/')
 
 const RESULTS_PATH = fileURLToPath(new URL('../data/results.json', import.meta.url))
 
@@ -30,7 +29,8 @@ function localResults(): Plugin {
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: `/${REPO_NAME}/`,
+  // Served from the root of the custom domain (wordless.sclarke.dev).
+  base: '/',
   define: {
     'import.meta.env.VITE_REPO': JSON.stringify(REPO),
   },
