@@ -4,12 +4,13 @@
 
 | Games | Win rate | Current streak | Avg. attempts (wins) |
 | ---: | ---: | ---: | ---: |
-| 8 | 88% | 2 | 4.6 |
+| 9 | 89% | 3 | 4.5 |
 
 ### History
 
 | Date | Result | Attempts | Word |
 | --- | --- | --- | --- |
+| 2026-09-28 | Won | 4 | trunk |
 | 2026-09-27 | Won | 4 | sloop |
 | 2026-09-26 | Won | 4 | elegy |
 | 2026-09-25 | Lost | 6 | - |

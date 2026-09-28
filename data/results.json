@@ -442,5 +442,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-09-28",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "trunk",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "rutin",
+        [
+          "present",
+          "present",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "prunt",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "present"
+        ]
+      ],
+      [
+        "trunk",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
