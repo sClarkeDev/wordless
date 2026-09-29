@@ -490,5 +490,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-09-29",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "scuba",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "present",
+          "miss",
+          "miss",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "hilsa",
+        [
+          "miss",
+          "miss",
+          "miss",
+          "present",
+          "hit"
+        ]
+      ],
+      [
+        "sputa",
+        [
+          "hit",
+          "miss",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "scuba",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
