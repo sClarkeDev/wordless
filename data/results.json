@@ -538,5 +538,73 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-09-30",
+    "won": false,
+    "attempts": 6,
+    "solved_word": null,
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "urite",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "diner",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "viler",
+        [
+          "present",
+          "hit",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "fiver",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "hiver",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
