@@ -606,5 +606,43 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-01",
+    "won": true,
+    "attempts": 3,
+    "solved_word": "ritzy",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "rutin",
+        [
+          "hit",
+          "miss",
+          "hit",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "ritzy",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
