@@ -644,5 +644,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-02",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "usury",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "shiur",
+        [
+          "present",
+          "miss",
+          "miss",
+          "present",
+          "present"
+        ]
+      ],
+      [
+        "rusty",
+        [
+          "present",
+          "present",
+          "present",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "crusy",
+        [
+          "miss",
+          "present",
+          "hit",
+          "present",
+          "hit"
+        ]
+      ],
+      [
+        "usury",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
