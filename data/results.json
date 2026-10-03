@@ -702,5 +702,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-03",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "peeve",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "lenti",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "bewdy",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "meech",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "peeve",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
