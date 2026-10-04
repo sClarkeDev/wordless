@@ -760,5 +760,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-04",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "shack",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "present",
+          "miss",
+          "miss",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "hilsa",
+        [
+          "present",
+          "miss",
+          "miss",
+          "present",
+          "present"
+        ]
+      ],
+      [
+        "washy",
+        [
+          "miss",
+          "present",
+          "present",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "scath",
+        [
+          "hit",
+          "present",
+          "hit",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "shack",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
