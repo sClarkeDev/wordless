@@ -818,5 +818,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-06",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "dimly",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "unity",
+        [
+          "miss",
+          "miss",
+          "present",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "imply",
+        [
+          "present",
+          "present",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "dimly",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
