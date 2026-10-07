@@ -866,5 +866,73 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-07",
+    "won": true,
+    "attempts": 6,
+    "solved_word": "prove",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "present",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "doter",
+        [
+          "miss",
+          "present",
+          "miss",
+          "present",
+          "present"
+        ]
+      ],
+      [
+        "prone",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "proke",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "prole",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "prove",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
