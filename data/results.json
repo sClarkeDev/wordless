@@ -934,5 +934,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-08",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "strew",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "hit",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "sprue",
+        [
+          "hit",
+          "miss",
+          "hit",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "shrew",
+        [
+          "hit",
+          "miss",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "strew",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
