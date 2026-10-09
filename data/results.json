@@ -982,5 +982,43 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-09",
+    "won": true,
+    "attempts": 3,
+    "solved_word": "major",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "present",
+          "miss",
+          "present",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "ramon",
+        [
+          "present",
+          "hit",
+          "present",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "major",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
