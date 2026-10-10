@@ -1020,5 +1020,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-10",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "bumpy",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "unity",
+        [
+          "present",
+          "miss",
+          "miss",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "duply",
+        [
+          "miss",
+          "hit",
+          "present",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "bumpy",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
