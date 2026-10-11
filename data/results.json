@@ -1068,5 +1068,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-11",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "uncap",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "present",
+          "miss",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "nital",
+        [
+          "present",
+          "miss",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "dunam",
+        [
+          "miss",
+          "present",
+          "present",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "unbag",
+        [
+          "hit",
+          "hit",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "uncap",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
