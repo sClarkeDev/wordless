@@ -1126,5 +1126,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-12",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "yodel",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "miss",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "loden",
+        [
+          "present",
+          "hit",
+          "hit",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "jodel",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "yodel",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
