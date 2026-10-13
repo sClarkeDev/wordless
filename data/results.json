@@ -1174,5 +1174,73 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-13",
+    "won": true,
+    "attempts": 6,
+    "solved_word": "wider",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "urite",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "diner",
+        [
+          "present",
+          "hit",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "bider",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "hider",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "wider",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
