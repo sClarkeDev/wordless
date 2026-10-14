@@ -1242,5 +1242,43 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-14",
+    "won": true,
+    "attempts": 3,
+    "solved_word": "psych",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "miss",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "sluit",
+        [
+          "present",
+          "miss",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "psych",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
