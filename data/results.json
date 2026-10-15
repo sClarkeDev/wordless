@@ -1280,5 +1280,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-15",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "dunce",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "eldin",
+        [
+          "present",
+          "miss",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "nuked",
+        [
+          "present",
+          "hit",
+          "miss",
+          "present",
+          "present"
+        ]
+      ],
+      [
+        "bunde",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "present",
+          "hit"
+        ]
+      ],
+      [
+        "dunce",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
