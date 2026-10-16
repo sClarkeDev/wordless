@@ -1338,5 +1338,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-16",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "shady",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "present",
+          "miss",
+          "miss",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "hilsa",
+        [
+          "present",
+          "miss",
+          "miss",
+          "present",
+          "present"
+        ]
+      ],
+      [
+        "washy",
+        [
+          "miss",
+          "present",
+          "present",
+          "present",
+          "hit"
+        ]
+      ],
+      [
+        "shady",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
