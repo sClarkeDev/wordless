@@ -1424,5 +1424,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-19",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "stink",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "miss",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "sluit",
+        [
+          "hit",
+          "miss",
+          "miss",
+          "present",
+          "present"
+        ]
+      ],
+      [
+        "sitch",
+        [
+          "hit",
+          "present",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "stimy",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "stink",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
