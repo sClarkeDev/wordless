@@ -1482,5 +1482,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-20",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "wrest",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "sieur",
+        [
+          "present",
+          "miss",
+          "hit",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "prest",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "drest",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "wrest",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
