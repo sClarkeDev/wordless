@@ -1540,5 +1540,43 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-24",
+    "won": true,
+    "attempts": 3,
+    "solved_word": "holey",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "miss",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "loden",
+        [
+          "present",
+          "hit",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "holey",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
