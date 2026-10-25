@@ -1578,5 +1578,73 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-25",
+    "won": true,
+    "attempts": 6,
+    "solved_word": "dress",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "rites",
+        [
+          "present",
+          "miss",
+          "miss",
+          "present",
+          "hit"
+        ]
+      ],
+      [
+        "dregs",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "dreks",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "dreys",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "dress",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
