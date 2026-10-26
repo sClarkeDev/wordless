@@ -1646,5 +1646,73 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-26",
+    "won": true,
+    "attempts": 6,
+    "solved_word": "geeky",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "lenti",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "bewdy",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "kempy",
+        [
+          "present",
+          "hit",
+          "miss",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "yeuky",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "geeky",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
