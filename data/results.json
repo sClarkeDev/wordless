@@ -1714,5 +1714,73 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-27",
+    "won": true,
+    "attempts": 6,
+    "solved_word": "bingo",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "miss",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "noily",
+        [
+          "present",
+          "present",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "pingo",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "jingo",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "dingo",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "bingo",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
