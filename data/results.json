@@ -1782,5 +1782,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-28",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "grist",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "shiur",
+        [
+          "present",
+          "miss",
+          "hit",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "frist",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "grist",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
