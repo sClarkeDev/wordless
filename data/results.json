@@ -1830,5 +1830,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-29",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "motor",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "present",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "milor",
+        [
+          "hit",
+          "miss",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "mucor",
+        [
+          "hit",
+          "miss",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "motor",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
