@@ -1878,5 +1878,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-30",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "slide",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "miss",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "istle",
+        [
+          "present",
+          "present",
+          "miss",
+          "present",
+          "hit"
+        ]
+      ],
+      [
+        "slipe",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "slive",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "miss",
+          "hit"
+        ]
+      ],
+      [
+        "slide",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
