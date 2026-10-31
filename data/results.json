@@ -1936,5 +1936,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-10-31",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "yahoo",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "present",
+          "miss",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "baton",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "kapow",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "havoc",
+        [
+          "present",
+          "hit",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "yahoo",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
