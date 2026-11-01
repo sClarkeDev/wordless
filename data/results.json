@@ -1994,5 +1994,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-11-01",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "viper",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "urite",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "diner",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "viler",
+        [
+          "hit",
+          "hit",
+          "miss",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "viper",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
