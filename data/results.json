@@ -2052,5 +2052,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-11-02",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "scoot",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "miss",
+          "hit",
+          "present"
+        ]
+      ],
+      [
+        "psion",
+        [
+          "miss",
+          "present",
+          "miss",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "sloot",
+        [
+          "hit",
+          "miss",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "scoot",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
