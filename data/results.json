@@ -2148,5 +2148,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-11-05",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "parch",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "present",
+          "miss",
+          "hit",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "mardy",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "carpi",
+        [
+          "present",
+          "hit",
+          "hit",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "parch",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
