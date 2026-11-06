@@ -2196,5 +2196,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-11-06",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "dreck",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "urite",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "predy",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "dreck",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
