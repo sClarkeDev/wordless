@@ -2244,5 +2244,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-11-07",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "prate",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "present",
+          "present",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "crate",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "frate",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ],
+      [
+        "prate",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
