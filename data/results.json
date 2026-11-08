@@ -2292,5 +2292,63 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-11-08",
+    "won": true,
+    "attempts": 5,
+    "solved_word": "first",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "miss",
+          "hit",
+          "miss",
+          "present"
+        ]
+      ],
+      [
+        "sirup",
+        [
+          "present",
+          "hit",
+          "hit",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "birsy",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "girsh",
+        [
+          "miss",
+          "hit",
+          "hit",
+          "hit",
+          "miss"
+        ]
+      ],
+      [
+        "first",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
