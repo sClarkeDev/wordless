@@ -2350,5 +2350,53 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-11-09",
+    "won": true,
+    "attempts": 4,
+    "solved_word": "loamy",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "present",
+          "miss",
+          "miss",
+          "present",
+          "miss"
+        ]
+      ],
+      [
+        "notal",
+        [
+          "miss",
+          "hit",
+          "miss",
+          "present",
+          "present"
+        ]
+      ],
+      [
+        "dolma",
+        [
+          "miss",
+          "hit",
+          "present",
+          "hit",
+          "present"
+        ]
+      ],
+      [
+        "loamy",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
