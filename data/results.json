@@ -2398,5 +2398,43 @@
         ]
       ]
     ]
+  },
+  {
+    "date": "2026-11-10",
+    "won": true,
+    "attempts": 3,
+    "solved_word": "truce",
+    "guesses": [
+      [
+        "aeros",
+        [
+          "miss",
+          "present",
+          "present",
+          "miss",
+          "miss"
+        ]
+      ],
+      [
+        "urite",
+        [
+          "present",
+          "hit",
+          "miss",
+          "present",
+          "hit"
+        ]
+      ],
+      [
+        "truce",
+        [
+          "hit",
+          "hit",
+          "hit",
+          "hit",
+          "hit"
+        ]
+      ]
+    ]
   }
 ]
